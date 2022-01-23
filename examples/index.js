@@ -1,4 +1,4 @@
-  import Cenxi from "./src/Cenxi";
+  import Cenxi from "/src/Cenxi";
 
   /** @jsx Cenxi.createElement */
   function Counter() {
