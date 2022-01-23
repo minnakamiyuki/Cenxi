@@ -1,3 +1,5 @@
+<h1 align="center"> Cenxi.js </h1>
+
 Cenxi.js is a very simple React-like framework whose implementation mainly refers to [build-your-own-react](https://pomb.us/build-your-own-react/).
 
 Unlike Didact.js, Cenxi.js is optimized for some specific JSX scenarios and also updates the view in a more natural way.
@@ -14,8 +16,7 @@ const Cenxi = {
     render,
     useState,
     useEffect,
-    //add your Hooks here
-    /* useyHooks */
+    /* useyourHooks */
   };
 ```
 
