@@ -4,7 +4,7 @@ Cenxi.js is a very simple React-like framework whose implementation mainly refer
 
 Unlike Didact.js, Cenxi.js is optimized for some specific JSX scenarios and also updates the view in a more natural way.
 
-![1639917033249](/home/minakami-yuki/图片/1639917033249.jpeg)
+![图片](https://user-images.githubusercontent.com/84240546/150669384-a02bfb6f-2bce-41c4-aeb6-0d8f71f9fd02.png)
 
 Cenxi.js currently only supports JSX compilation to JS (no Typescript support), two of the React Hooks (useState & useEffect) and some of React's basic environments (Fiber).
 
