@@ -18,7 +18,7 @@ const Cenxi = {
     render,
     useState,
     useEffect,
-    /* useyourHooks */
+    /* useYourHooks */
   };
 ```
 
