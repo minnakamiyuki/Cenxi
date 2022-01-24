@@ -6,13 +6,13 @@ Unlike Didact.js, Cenxi.js is optimized for some specific JSX scenarios and also
 
 ![图片](https://user-images.githubusercontent.com/84240546/150669384-a02bfb6f-2bce-41c4-aeb6-0d8f71f9fd02.png)
 
-Cenxi.js currently only supports JSX compilation to JS (no Typescript support), two of the React Hooks (useState & useEffect) and some of React's basic environments (Fiber).
+Cenxi.js currently only supports JSX (and TSX) compilation to JS, two of the React Hooks (useState & useEffect) and some of React's basic environments (Fiber).
 
 No support for class components at all, no Virtual DOM complex diff heuristic algorithm...
 
-Cenxi.js allows you to customize Hooks, just add the name of your custom Hooks to 
+Cenxi.js allows you to customize Hooks, just add the name of your custom Hooks to
 
-```javascript
+```typescript
 const Cenxi = {
     createElement,
     render,
@@ -24,4 +24,4 @@ const Cenxi = {
 
 to use them.
 
-I am currently trying to rewrite Cenxi.js with Typescript, which means that Cenxi.js will be able to support TSX, so stay tuned!
+The TypeScript version of Cenxi.js has completed. Just have fun!
