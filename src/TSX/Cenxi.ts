@@ -11,7 +11,7 @@
         ...props,
         children: children
         .flat()
-        .map(child =>
+        .map((child: any) =>
           typeof child === "object"
             ? child
             : createTextElement(child)
@@ -70,11 +70,11 @@
     Object.keys(prevProps)
       .filter(isEvent)
       .filter(
-        key =>
+        (        key: string) =>
           !(key in nextProps) ||
           isNew(prevProps, nextProps)(key)
       )
-      .forEach(name => {
+      .forEach((name: string | number) => {
         const eventType = name
           .toLowerCase()
           .substring(2)
@@ -88,7 +88,7 @@
     Object.keys(prevProps)
       .filter(isProperty)
       .filter(isGone(prevProps, nextProps))
-      .forEach(name => {
+      .forEach((name: string | number) => {
         dom[name] = "";
       });
   
@@ -96,7 +96,7 @@
     Object.keys(nextProps)
       .filter(isProperty)
       .filter(isNew(prevProps, nextProps))
-      .forEach(name => {
+      .forEach((name: string) => {
         if (name === 'style') { // update style
             transformDomStyle(dom, nextProps.style)
           } else if (name === 'className') { // update className
@@ -111,7 +111,7 @@
     Object.keys(nextProps)
       .filter(isEvent)
       .filter(isNew(prevProps, nextProps))
-      .forEach(name => {
+      .forEach((name: string | number) => {
         const eventType = name
           .toLowerCase()
           .substring(2);
@@ -128,10 +128,10 @@
     style: { [x: string]: any; 
     }) {
         dom.style = Object.keys(style)
-            .reduce((acc, styleName) => {
+            .reduce((acc: string, styleName: string | number) => {
         const key = styleName.replace(
             reg, 
-            function(v) { 
+            function(v: { toLowerCase: () => string; }) { 
               return '-' + v.toLowerCase();
             }
           );
