@@ -24,4 +24,4 @@ const Cenxi = {
 
 to use them.
 
-The TypeScript version of Cenxi.js has completed. Just have fun!
+The TypeScript version of Cenxi.js has completed. Have fun!
