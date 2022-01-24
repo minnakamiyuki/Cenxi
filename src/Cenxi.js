@@ -315,7 +315,7 @@
     wipFiber.hooks.push(hook);
     hookIndex++;
   }
-
+  
   function updateHostComponent(fiber) {
     if (!fiber.dom) {
       fiber.dom = createDom(fiber);
